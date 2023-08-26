@@ -21,10 +21,8 @@ class Solution{
             }
             else{
                 while(mp.size()>k){
-                    if(mp[s[i]]>1){
-                        mp[s[i]]--;
-                    }
-                    else{
+                    mp[s[i]]--;
+                    if(mp[s[i]]==0){
                         mp.erase(s[i]);
                     }
                     i++;
