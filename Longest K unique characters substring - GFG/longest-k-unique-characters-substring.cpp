@@ -18,7 +18,6 @@ class Solution{
             mp[s[j]]++;
             if(mp.size()==k){
                 mx=max(mx,j-i+1);
-                j++;
             }
             else{
                 while(mp.size()>k){
@@ -30,9 +29,9 @@ class Solution{
                     }
                     i++;
                 }
-                j++;
                 
             }
+            j++;
             
         }
         return mx;
